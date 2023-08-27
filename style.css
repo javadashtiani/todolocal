@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: rgb(133, 177, 177);
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.todo-box {
+  width: 500px;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-box > div > h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.todo-box .all-box {
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+}
+.todo-box .input-box {
+  width: 500px;
+  display: flex;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.input-box > input {
+  width: 540px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 16px;
+  padding: 10px;
+}
+.input-box > button {
+  width: 40px;
+  background-color: red;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.input-box > button > i {
+  font-size: 26px;
+}
+.all-box .select {
+  width: 150px;
+  height: 40px;
+}
+.all-box .select > .filter {
+  outline: none;
+  height: inherit;
+  border-radius: 6px;
+}
+.all-box .select > .filter > option {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.todo-container {
+  margin-top: 60px;
+  width: 500px;
+}
+.todo-container > .todo-list {
+  list-style: none;
+}
+.todo-container > .todo-list > li {
+  display: flex;
+  font-size: 18px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.todo-container > .todo-list > li > div {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  height: inherit;
+}
+.todo-container > .todo-list > li > div > .check,
+.todo-container > .todo-list > li > div > .trash {
+  width: 40px;
+  color: red;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.todo-container > .todo-list > li > div > .check {
+  color: green;
+}
+
+.todo-container > .todo-list > li > div > .check > i,
+.todo-container > .todo-list > li > div > .trash > i {
+  font-size: 20px;
+}
+.complete-todo {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
